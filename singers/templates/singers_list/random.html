@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="widget widget-shadow">
+    <div class="widget-header cover overlay">
+        <div class="cover-background height-200"
+             style="background-image: url('{% static 'assets/images/placeholder.png' %}')"></div>
+    </div>
+    <div class="widget-body padding-horizontal-30 padding-vertical-20" style="height:calc(100% - 250px);">
+        <div class="margin-bottom-10" style="margin-top: -70px;">
+            <a class="avatar avatar-100 bg-white img-bordered" href="javascript:void(0)">
+                <img src="{% static 'assets/images/2.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="margin-bottom-20">
+            {% if random_singer %}
+                <div class="font-size-20"><strong>{{ random_singer.name }}</strong></div>
+                <div class="font-size-14 grey-500">
+                </div>
+            {% else %}
+                <p>No random singer found</p>
+            {% endif %}
+        </div>
+
+        <p>
+            All singers:
+            {% for singer in singers %}
+                {{ singer.name }},
+            {% endfor %}
+        </p>
+    </div>
+</div>

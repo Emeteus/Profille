@@ -1,0 +1,1175 @@
+{% load static %}
+
+
+  <nav class="site-navbar navbar navbar-inverse navbar-fixed-top navbar-mega navbar-inverse"
+  role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+      data-toggle="menubar">
+        <span class="sr-only">Перемкнути навігацію</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon md-more" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand navbar-brand-center" href="index.html">
+        <img class="navbar-brand-logo navbar-brand-logo-normal" src="{% static 'assets/images/logo.png' %}" title="ChessCRM">
+        <img class="navbar-brand-logo navbar-brand-logo-special" src="{% static 'assets/images/logo-blue.png' %}" title="ChessCRM">
+        <span class="navbar-brand-text hidden-xs"> ChessCRM</span>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
+      data-toggle="collapse">
+        <span class="sr-only">Перемкнути Пошук</span>
+        <i class="icon md-search" aria-hidden="true"></i>
+      </button>
+	</div>
+
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="hidden-float" id="toggleMenubar">
+            <a data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Перемкнути Менюбар</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+            </a>
+          </li>
+          <li class="hidden-xs" id="toggleFullscreen">
+            <a class="icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+              <span class="sr-only">Перемкнути на повний екран</span>
+            </a>
+          </li>
+          <li class="hidden-float">
+            <a class="icon md-search" data-toggle="collapse" href="#" data-target="#site-navbar-search"
+            role="button">
+              <span class="sr-only">Перемкнути пошук</span>
+            </a>
+          </li>
+          <li class="dropdown dropdown-fw dropdown-mega">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+            data-animation="fade" role="button">Мегаменю <i class="icon md-chevron-down" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="presentation">
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h5>Елементи оформлення</h5>
+                      <ul class="blocks-2">
+                        <li class="mega-menu margin-0">
+                          <ul class="list-icons">
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Анімація</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Кнопки</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Кольори</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Дропдауни</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Іконки</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Лайтбокс</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mega-menu margin-0">
+                          <ul class="list-icons">
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Вікна</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Панелі</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Накладення</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Підказки</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Прокрутка</a>
+                            </li>
+                            <li><i class="md-chevron-right" aria-hidden="true"></i>
+                              <a href="#">Типографія</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <h5>Медіа
+                        <span class="badge badge-success">4</span>
+                      </h5>
+                      <ul class="blocks-3">
+                        <li>
+                          <a class="thumbnail margin-0" href="javascript:void(0)">
+                            <img class="width-full" src="{% static 'assets/images/placeholder.png' %}" alt="..." />
+                          </a>
+                        </li>
+                        <li>
+                          <a class="thumbnail margin-0" href="javascript:void(0)">
+                            <img class="width-full" src="{% static 'assets/images/placeholder.png' %}" alt="..." />
+                          </a>
+                        </li>
+                        <li>
+                          <a class="thumbnail margin-0" href="javascript:void(0)">
+                            <img class="width-full" src="{% static 'assets/images/placeholder.png' %}" alt="..." />
+                          </a>
+                        </li>
+                        <li>
+                          <a class="thumbnail margin-0" href="javascript:void(0)">
+                            <img class="width-full" src="{% static 'assets/images/placeholder.png' %}" alt="..." />
+                          </a>
+                        </li>
+                        <li>
+                          <a class="thumbnail margin-0" href="javascript:void(0)">
+                            <img class="width-full" src="{% static 'assets/images/placeholder.png' %}" alt="..." />
+                          </a>
+                        </li>
+                        <li>
+                          <a class="thumbnail margin-0" href="javascript:void(0)">
+                            <img class="width-full" src="{% static 'assets/images/placeholder.png' %}" alt="...">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <h5 class="margin-bottom-0">Заголовки</h5>
+                      <!-- Accordion -->
+                      <div class="panel-group panel-group-simple" id="siteMegaAccordion" aria-multiselectable="true"
+                      role="tablist">
+                        <div class="panel">
+                          <div class="panel-heading" id="siteMegaAccordionHeadingOne" role="tab">
+                            <a class="panel-title" data-toggle="collapse" href="#siteMegaCollapseOne" data-parent="#siteMegaAccordion"
+                            aria-expanded="false" aria-controls="siteMegaCollapseOne">
+                              Заголовок 1
+                            </a>
+                          </div>
+                          <div class="panel-collapse collapse" id="siteMegaCollapseOne" aria-labelledby="siteMegaAccordionHeadingOne"
+                          role="tabpanel">
+                            <div class="panel-body">
+                              Вміст панелі
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel">
+                          <div class="panel-heading" id="siteMegaAccordionHeadingTwo" role="tab">
+                            <a class="panel-title collapsed" data-toggle="collapse" href="#siteMegaCollapseTwo"
+                            data-parent="#siteMegaAccordion" aria-expanded="false"
+                            aria-controls="siteMegaCollapseTwo">
+                              Заголовок 2
+                            </a>
+                          </div>
+                          <div class="panel-collapse collapse" id="siteMegaCollapseTwo" aria-labelledby="siteMegaAccordionHeadingTwo"
+                          role="tabpanel">
+                            <div class="panel-body">
+                              Вміст панелі
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel">
+                          <div class="panel-heading" id="siteMegaAccordionHeadingThree" role="tab">
+                            <a class="panel-title collapsed" data-toggle="collapse" href="#siteMegaCollapseThree"
+                            data-parent="#siteMegaAccordion" aria-expanded="false"
+                            aria-controls="siteMegaCollapseThree">
+                              Заголовок 3
+                            </a>
+                          </div>
+                          <div class="panel-collapse collapse" id="siteMegaCollapseThree" aria-labelledby="siteMegaAccordionHeadingThree"
+                          role="tabpanel">
+                            <div class="panel-body">
+                              Вміст панелі
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Accordion -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+		<!-- End Navbar Toolbar -->
+        <!-- Navbar Toolbar Right -->
+        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+            aria-expanded="false" role="button">
+              <span class="flag-icon flag-icon-ua"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="presentation">
+                <a href="javascript:void(0)" role="menuitem">
+                  <span class="flag-icon flag-icon-ua"></span> Український</a>
+              </li>
+              <li role="presentation">
+                <a href="javascript:void(0)" role="menuitem">
+                  <span class="flag-icon flag-icon-fr"></span> French</a>
+              </li>
+              <li role="presentation">
+                <a href="javascript:void(0)" role="menuitem">
+                  <span class="flag-icon flag-icon-de"></span> German</a>
+              </li>
+              <li role="presentation">
+                <a href="javascript:void(0)" role="menuitem">
+                  <span class="flag-icon flag-icon-nl"></span> Dutch</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+            data-animation="scale-up" role="button">
+              <span class="avatar avatar-online">
+                <img src="{% static 'assets/images/Klavdia_Petrivna.jpg' %}" alt="...">
+                <i></i>
+              </span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+				  <li role="presentation">
+					<a href="profile.html" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Профіль</a>
+				  </li>
+				  <li role="presentation">
+					<a href="javascript:void(0)" role="menuitem"><i class="icon md-card" aria-hidden="true"></i> Біллінг</a>
+				  </li>
+				  <li role="presentation">
+					<a href="javascript:void(0)" role="menuitem"><i class="icon md-settings" aria-hidden="true"></i> Налаштування</a>
+				  </li>
+				  <li class="divider" role="presentation"></li>
+				  <li role="presentation">
+					<a href="javascript:void(0)" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> Вихід</a>
+				  </li>
+			</ul>
+
+          </li>
+          <li id="toggleChat">
+            <a data-toggle="site-sidebar" href="javascript:void(0)" title="Chat" data-url="site-sidebar.tpl">
+              <i class="icon md-comment" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+      <!-- Site Navbar Seach -->
+      <div class="collapse navbar-search-overlap" id="site-navbar-search">
+        <form role="search">
+          <div class="form-group">
+            <div class="input-search">
+              <i class="input-search-icon md-search" aria-hidden="true"></i>
+                <label>
+                    <input type="text" class="form-control" name="site-search" placeholder="Пошук...">
+                </label>
+                <button type="button" class="input-search-close icon md-close" data-target="#site-navbar-search"
+              data-toggle="collapse" aria-label="Закрити"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Site Navbar Seach -->
+    </div>
+  </nav>
+  <div class="site-menubar">
+    <div class="site-menubar-body">
+      <div>
+        <div>
+          <ul class="site-menu">
+            <li class="site-menu-category">Основное</li>
+           <li class="dropdown site-menu-item has-sub">
+			  <a class="dropdown-toggle" href="javascript:void(0)" data-dropdown-toggle="false">
+				<i class="site-menu-icon md-view-compact" aria-hidden="true"></i>
+				<span class="site-menu-title">Макети</span>
+				<span class="site-menu-arrow"></span>
+			  </a>
+			  <div class="dropdown-menu">
+				<div class="site-menu-scroll-wrap is-list">
+				  <div>
+					<div>
+					  <ul class="site-menu-sub site-menu-normal-list">
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="#">
+							<span class="site-menu-title">Bootstrap сітка</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="#">
+							<span class="site-menu-title">Сітка Layout</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="#">
+							<span class="site-menu-title">Вибір Заголовка</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="#">
+							<span class="site-menu-title">Керовані панелі</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="wide.html">
+							<span class="site-menu-title">Широкий Макет</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="two-columns.html">
+							<span class="site-menu-title">Дві колонки</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="bordered-header.html">
+							<span class="site-menu-title">Виділений Заголовок</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="bordered-header.html">
+							<span class="site-menu-title">Виділений Заголовок</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="page-aside-fixed.html">
+							<span class="site-menu-title">Фіксований сайдбар</span>
+						  </a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</li>
+			<li class="dropdown site-menu-item has-sub">
+			  <a class="dropdown-toggle" href="javascript:void(0)" data-dropdown-toggle="false">
+				<i class="site-menu-icon md-google-pages" aria-hidden="true"></i>
+				<span class="site-menu-title">Сторінки</span>
+				<span class="site-menu-arrow"></span>
+			  </a>
+			  <div class="dropdown-menu">
+				<div class="site-menu-scroll-wrap is-list">
+				  <div>
+					<div>
+					  <ul class="site-menu-sub site-menu-normal-list">
+						<li class="site-menu-item has-sub">
+						  <a href="javascript:void(0)">
+							<span class="site-menu-title">Помилки</span>
+							<span class="site-menu-arrow"></span>
+						  </a>
+						  <ul class="site-menu-sub">
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="error-400.html">
+								<span class="site-menu-title">400</span>
+							  </a>
+							</li>
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="error-403.html">
+								<span class="site-menu-title">403</span>
+							  </a>
+							</li>
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="error-404.html">
+								<span class="site-menu-title">404</span>
+							  </a>
+							</li>
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="error-500.html">
+								<span class="site-menu-title">500</span>
+							  </a>
+							</li>
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="error-503.html">
+								<span class="site-menu-title">503</span>
+							  </a>
+							</li>
+						  </ul>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="faq.html">
+							<span class="site-menu-title">Запитання та відповіді</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="gallery.html">
+							<span class="site-menu-title">Галерея</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="gallery-grid.html">
+							<span class="site-menu-title">Галерея сіткою</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="search-result.html">
+							<span class="site-menu-title">Результати пошуку</span>
+						  </a>
+						</li>
+						<li class="site-menu-item has-sub">
+						  <a href="javascript:void(0)">
+							<span class="site-menu-title">Карти</span>
+							<span class="site-menu-arrow"></span>
+						  </a>
+						  <ul class="site-menu-sub">
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="map-google.html">
+								<span class="site-menu-title">Google Карти</span>
+							  </a>
+							</li>
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="map-vector.html">
+								<span class="site-menu-title">Векторні Карти</span>
+							  </a>
+							</li>
+						  </ul>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="maintenance.html">
+							<span class="site-menu-title">Сайт на реконструкції</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="forgot-password.html">
+							<span class="site-menu-title">Забутий пароль</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="lockscreen.html">
+							<span class="site-menu-title">Екран блокування</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="login.html">
+							<span class="site-menu-title">Вхід</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="register.html">
+							<span class="site-menu-title">Реєстрація</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="login-v2.html">
+							<span class="site-menu-title">Вхід V2</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="register-v2.html">
+							<span class="site-menu-title">Реєстрація V2</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="login-v3.html">
+							<span class="site-menu-title">Вхід V3</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="register-v3.html">
+							<span class="site-menu-title">Реєстрація V3</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="user.html">
+							<span class="site-menu-title">Список користувачів</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="invoice.html">
+							<span class="site-menu-title">Рахунок-фактура</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="blank.html">
+							<span class="site-menu-title">Порожня сторінка</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="email.html">
+							<span class="site-menu-title">Email</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="code-editor.html">
+							<span class="site-menu-title">Редактор коду</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="profile.html">
+							<span class="site-menu-title">Профіль</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="site-map.html">
+							<span class="site-menu-title">Карта сайту</span>
+						  </a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</li>
+			<li class="site-menu-category">Елементи</li>
+            <li class="dropdown site-menu-item has-section has-sub active">
+              <a class="dropdown-toggle" href="javascript:void(0)" data-dropdown-toggle="false">
+                <i class="site-menu-icon md-palette" aria-hidden="true"></i>
+                <span class="site-menu-title">UI</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="dropdown-menu site-menu-sub site-menu-section-wrap blocks-sm-3">
+				<li class="site-menu-section site-menu-item has-sub active">
+				  <header>
+					<span class="site-menu-title">Базові UI</span>
+					<span class="site-menu-arrow"></span>
+				  </header>
+				  <div class="site-menu-scroll-wrap is-section">
+					<div>
+					  <div>
+						<ul class="site-menu-sub site-menu-section-list">
+						  <li class="site-menu-item has-sub">
+							<a href="javascript:void(0)">
+							  <span class="site-menu-title">Панель</span>
+							  <span class="site-menu-arrow"></span>
+							</a>
+							<ul class="site-menu-sub">
+							  <li class="site-menu-item">
+								<a class="animsition-link" href="panel-structure.html">
+								  <span class="site-menu-title">Структура Панелі</span>
+								</a>
+							  </li>
+							  <li class="site-menu-item">
+								<a class="animsition-link" href="panel-actions.html">
+								  <span class="site-menu-title">Дії Панелі</span>
+								</a>
+							  </li>
+							  <li class="site-menu-item">
+								<a class="animsition-link" href="panel-portlets.html">
+								  <span class="site-menu-title">Портлети Панелі</span>
+								</a>
+							  </li>
+							</ul>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="buttons.html">
+							  <span class="site-menu-title">Кнопки</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="dropdowns.html">
+							  <span class="site-menu-title">Випадаючі Списки</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="icons.html">
+							  <span class="site-menu-title">Іконки</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="list.html">
+							  <span class="site-menu-title">Список</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="tooltip-popover.html">
+							  <span class="site-menu-title">Підказки &amp; Спливаючі Вікна</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="modals.html">
+							  <span class="site-menu-title">Модальні Вікна</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="tabs-accordions.html">
+							  <span class="site-menu-title">Вкладки &amp; Акордеони</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="images.html">
+							  <span class="site-menu-title">Зображення</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="badges-labels.html">
+							  <span class="site-menu-title">Значки &amp; Етикетки</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="progress-bars.html">
+							  <span class="site-menu-title">Панелі Прогресу</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="carousel.html">
+							  <span class="site-menu-title">Карусель</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="typography.html">
+							  <span class="site-menu-title">Типографіка</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="colors.html">
+							  <span class="site-menu-title">Кольори</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="utilities.html">
+							  <span class="site-menu-title">Утиліти</span>
+							</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				</li>
+
+                <li class="site-menu-section site-menu-item has-sub">
+				  <header>
+					<span class="site-menu-title">Розширений UI</span>
+					<span class="site-menu-arrow"></span>
+				  </header>
+				  <div class="site-menu-scroll-wrap is-section">
+					<div>
+					  <div>
+						<ul class="site-menu-sub site-menu-section-list">
+						  <li class="site-menu-item hidden-xs site-tour-trigger">
+							<a href="javascript:void(0)">
+							  <span class="site-menu-title">Тур</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="animation.html">
+							  <span class="site-menu-title">Анімація</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="highlight.html">
+							  <span class="site-menu-title">Підсвітка</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="lightbox.html">
+							  <span class="site-menu-title">Лайтбокс</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="scrollable.html">
+							  <span class="site-menu-title">Прокрутка</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="rating.html">
+							  <span class="site-menu-title">Рейтинг</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="context-menu.html">
+							  <span class="site-menu-title">Контекстне Меню</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="alertify.html">
+							  <span class="site-menu-title">Alertify</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="masonry.html">
+							  <span class="site-menu-title">Масонрі</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="treeview.html">
+							  <span class="site-menu-title">Дерево</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="toastr.html">
+							  <span class="site-menu-title">Toastr</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="maps-vector.html">
+							  <span class="site-menu-title">Векторні Карти</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="maps-google.html">
+							  <span class="site-menu-title">Google Карти</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="sortable-nestable.html">
+							  <span class="site-menu-title">Сортування та Вкладеність</span>
+							</a>
+						  </li>
+						  <li class="site-menu-item">
+							<a class="animsition-link" href="bootbox-sweetalert.html">
+							  <span class="site-menu-title">Bootbox &amp; Sweetalert</span>
+							</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				</li>
+                <li class="site-menu-section site-menu-item has-sub">
+                  <header>
+                    <span class="site-menu-title">Структурні</span>
+                    <span class="site-menu-arrow"></span>
+                  </header>
+                  <div class="site-menu-scroll-wrap is-section">
+                    <div>
+                      <div>
+                        <ul class="site-menu-sub site-menu-section-list">
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="alerts.html">
+                              <span class="site-menu-title">Alerts</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="ribbon.html">
+                              <span class="site-menu-title">Ribbon</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="pricing-tables.html">
+                              <span class="site-menu-title">Pricing Tables</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="overlay.html">
+                              <span class="site-menu-title">Overlay</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="cover.html">
+                              <span class="site-menu-title">Cover</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="timeline-simple.html">
+                              <span class="site-menu-title">Simple Timeline</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="timeline.html">
+                              <span class="site-menu-title">Timeline</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="step.html">
+                              <span class="site-menu-title">Step</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="comments.html">
+                              <span class="site-menu-title">Comments</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="media.html">
+                              <span class="site-menu-title">Медиа</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="chat.html">
+                              <span class="site-menu-title">Chat</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="testimonials.html">
+                              <span class="site-menu-title">Testimonials</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="nav.html">
+                              <span class="site-menu-title">Nav</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="navbars.html">
+                              <span class="site-menu-title">Navbars</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="blockquotes.html">
+                              <span class="site-menu-title">Blockquotes</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="pagination.html">
+                              <span class="site-menu-title">Pagination</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="breadcrumbs.html">
+                              <span class="site-menu-title">Breadcrumbs</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown site-menu-item has-section has-sub">
+              <a class="dropdown-toggle" href="javascript:void(0)" data-dropdown-toggle="false">
+                <i class="site-menu-icon md-puzzle-piece" aria-hidden="true"></i>
+                <span class="site-menu-title">Плагіни</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="dropdown-menu site-menu-sub site-menu-section-wrap blocks-sm-3">
+                <li class="site-menu-section site-menu-item has-sub">
+                  <header>
+                    <span class="site-menu-title">Форми</span>
+                    <span class="site-menu-arrow"></span>
+                  </header>
+                  <div class="site-menu-scroll-wrap is-section">
+                    <div>
+                      <div>
+                        <ul class="site-menu-sub site-menu-section-list">
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="general.html">
+                              <span class="site-menu-title">General Elements</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="ChessCRM.html">
+                              <span class="site-menu-title">ChessCRM Elements</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="advanced.html">
+                              <span class="site-menu-title">Advanced Elements</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="layouts.html">
+                              <span class="site-menu-title">Form Layouts</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="wizard.html">
+                              <span class="site-menu-title">Form Wizard</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="validation.html">
+                              <span class="site-menu-title">Form Validation</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="masks.html">
+                              <span class="site-menu-title">Form Masks</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="editable.html">
+                              <span class="site-menu-title">Form Editable</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item has-sub">
+                            <a href="javascript:void(0)">
+                              <span class="site-menu-title">Editors</span>
+                              <span class="site-menu-arrow"></span>
+                            </a>
+                            <ul class="site-menu-sub">
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="editor-summernote.html">
+                                  <span class="site-menu-title">Summernote</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="editor-markdown.html">
+                                  <span class="site-menu-title">Markdown</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="file-uploads.html">
+                              <span class="site-menu-title">File Uploads</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="site-menu-section site-menu-item has-sub">
+                  <header>
+                    <span class="site-menu-title">Таблиці</span>
+                    <span class="site-menu-arrow"></span>
+                  </header>
+                  <div class="site-menu-scroll-wrap is-section">
+                    <div>
+                      <div>
+                        <ul class="site-menu-sub site-menu-section-list">
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="basic.html">
+                              <span class="site-menu-title">Basic Tables</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="bootstrap.html">
+                              <span class="site-menu-title">Bootstrap Tables</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="floatthead.html">
+                              <span class="site-menu-title">floatThead</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="responsive.html">
+                              <span class="site-menu-title">Responsive Tables</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="editable.html">
+                              <span class="site-menu-title">Editable Tables</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="jsgrid.html">
+                              <span class="site-menu-title">jsGrid</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="footable.html">
+                              <span class="site-menu-title">FooTable</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="datatable.html">
+                              <span class="site-menu-title">DataTables</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="site-menu-section site-menu-item has-sub">
+                  <header>
+                    <span class="site-menu-title">Графіки</span>
+                    <span class="site-menu-arrow"></span>
+                  </header>
+                  <div class="site-menu-scroll-wrap is-section">
+                    <div>
+                      <div>
+                        <ul class="site-menu-sub site-menu-section-list">
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="chartjs.html">
+                              <span class="site-menu-title">Chart.js</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="gauges.html">
+                              <span class="site-menu-title">Gauges</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="flot.html">
+                              <span class="site-menu-title">Flot</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="peity.html">
+                              <span class="site-menu-title">Peity</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="sparkline.html">
+                              <span class="site-menu-title">Sparkline</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="morris.html">
+                              <span class="site-menu-title">Morris</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="chartist.html">
+                              <span class="site-menu-title">Chartist.js</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="rickshaw.html">
+                              <span class="site-menu-title">Rickshaw</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="pie-progress.html">
+                              <span class="site-menu-title">Pie Progress</span>
+                            </a>
+                          </li>
+                          <li class="site-menu-item">
+                            <a class="animsition-link" href="c3.html">
+                              <span class="site-menu-title">C3</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown site-menu-item has-sub">
+			  <a class="dropdown-toggle" href="javascript:void(0)" data-dropdown-toggle="false">
+				<i class="site-menu-icon md-widgets" aria-hidden="true"></i>
+				<span class="site-menu-title">Віджети</span>
+				<span class="site-menu-arrow"></span>
+			  </a>
+			  <div class="dropdown-menu">
+				<div class="site-menu-scroll-wrap is-list">
+				  <div>
+					<div>
+					  <ul class="site-menu-sub site-menu-normal-list">
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="statistics.html">
+							<span class="site-menu-title">Статичні Віджети</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="data.html">
+							<span class="site-menu-title">Віджети Даних</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="blog.html">
+							<span class="site-menu-title">Віджети Блогів</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="chart.html">
+							<span class="site-menu-title">Віджети Графіків</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="social.html">
+							<span class="site-menu-title">Віджети Соцмереж</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="weather.html">
+							<span class="site-menu-title">Віджети Погоди</span>
+						  </a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</li>
+            <li class="site-menu-category">Додатки</li>
+			<li class="dropdown site-menu-item has-sub">
+			  <a class="dropdown-toggle" href="javascript:void(0)" data-dropdown-toggle="false">
+				<i class="site-menu-icon md-apps" aria-hidden="true"></i>
+				<span class="site-menu-title">Додатки</span>
+				<span class="site-menu-arrow"></span>
+			  </a>
+			  <div class="dropdown-menu">
+				<div class="site-menu-scroll-wrap is-list">
+				  <div>
+					<div>
+					  <ul class="site-menu-sub site-menu-normal-list">
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="contacts.html">
+							<span class="site-menu-title">Контакти</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="calendar.html">
+							<span class="site-menu-title">Календар</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="notebook.html">
+							<span class="site-menu-title">Редактор</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="taskboard.html">
+							<span class="site-menu-title">Дошка завдань</span>
+						  </a>
+						</li>
+						<li class="site-menu-item has-sub">
+						  <a href="javascript:void(0)">
+							<span class="site-menu-title">Документи</span>
+							<span class="site-menu-arrow"></span>
+						  </a>
+						  <ul class="site-menu-sub">
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="articles.html">
+								<span class="site-menu-title">Статті</span>
+							  </a>
+							</li>
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="categories.html">
+								<span class="site-menu-title">Категорії</span>
+							  </a>
+							</li>
+							<li class="site-menu-item">
+							  <a class="animsition-link" href="article.html">
+								<span class="site-menu-title">Стаття</span>
+							  </a>
+							</li>
+						  </ul>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="forum.html">
+							<span class="site-menu-title">Форум</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="message.html">
+							<span class="site-menu-title">Повідомлення</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="projects.html">
+							<span class="site-menu-title">Проекти</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="mailbox.html">
+							<span class="site-menu-title">Поштова скринька</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="overview.html">
+							<span class="site-menu-title">Медіа</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="#">
+							<span class="site-menu-title">Робота</span>
+						  </a>
+						</li>
+						<li class="site-menu-item">
+						  <a class="animsition-link" href="#">
+							<span class="site-menu-title">Місцезнаходження</span>
+						  </a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

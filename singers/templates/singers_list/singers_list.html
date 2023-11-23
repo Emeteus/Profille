@@ -1,0 +1,42 @@
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+<div class="panel" id="projects">
+    <div class="panel-heading">
+        <h3 class="panel-title">Список публікацій</h3>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td><strong>Назва</strong></td>
+                <td><strong>Жанр</strong></td>
+                <td><strong>Солісти</strong></td>
+                <td><strong>Підписників</strong></td>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for singer in singers %}
+                <tr>
+                    <td>{{ singer.name }}</td>
+                    <td>{{ singer.genre }}</td>
+                    <td>{{ singer.lead_singers }}</td>
+                    <td>{{ singer.followers }}</td>
+                    <td>
+                        <a href="{% url 'singer_detail' codde=singer.codde %}" class="btn btn-primary">View Details</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#projects table').DataTable({
+            "order": [[3, "desc"]]
+        });
+    });
+</script>
